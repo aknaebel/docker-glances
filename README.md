@@ -2,7 +2,7 @@
 
 ## Description:
 
-This docker image provide a [glanes](https://glances.readthedocs.io/en/stable/index.html) service based on [Alpine Linux](https://hub.docker.com/_/alpine/)
+This docker image provide a [glances](https://glances.readthedocs.io/en/stable/index.html) service based on [Alpine Linux](https://hub.docker.com/_/alpine/)
 
 ## Usage:
 ### Run glances in console mode
@@ -27,7 +27,7 @@ docker run --name glances -it -p 61208-61209:61208-61209 \
 version: '2'
 services:
     glances:
-        image: aknaebel/glanes
+        image: aknaebel/glances
         ports:
             - "61208-61209:61208-61209"
         volumes:
