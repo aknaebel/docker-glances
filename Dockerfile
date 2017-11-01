@@ -7,6 +7,7 @@ RUN apk upgrade --update \
  && apk add python3 python3-dev gcc g++ linux-headers musl-dev ca-certificates openssl freetype-dev libpng-dev \
  && update-ca-certificates \
  && pip3 install glances[action,browser,cloud,cpuinfo,chart,docker,export,folders,gpu,ip,raid,snmp,web,wifi] \
+ && mkdir -p /glances/conf \
  && apk del python3-dev gcc g++ linux-headers freetype-dev libpng-dev \
  && rm -rf /var/cache/apk/* /tmp/*
 
